@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: white;
+    font-size: 600;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #A0C9FE;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 40px;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0%;
+}
+
+main .social-media a:last-child img {
+    margin-right: 0;
+}
+
+main .alternative {
+    margin-top: 10px;
+}
+
+main .alternative span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #303d60c2;
+    position: relative;
+}
+
+main .alternative span::before,
+main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: #303d60c2;
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+main form input {
+    background-color: #f6f6f6;
+    width: 300px;
+    height: 40px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    outline: none;
+    color: rgba(73, 73, 73);
+    font-size: 15px;
+    border: 0.1px solid #303d6025;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 32px;
+    background-color: #A0C9FE;
+    color: #f6f6f6;
+    padding: 7px 15px;
+    font-size: 17px;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background-color: #75A1DE;
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+section.images img {
+    width: 725px;
+}
